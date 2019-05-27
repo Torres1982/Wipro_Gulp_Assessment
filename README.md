@@ -1,6 +1,6 @@
 # Wipro Gulp Assessment
 
-###Technologies used:
+### Technologies used:
 
 1. Java Script
 2. HTML
@@ -9,7 +9,7 @@
 5. Gulp
 6. npm/Node.js
 
-###Assessment Description:
+### Assessment Description:
 
 1. It's a simple assessment based on gulp concept that performs some tasks to optimize the project files:
 - uglyfying/minifying (JS and CSS)
