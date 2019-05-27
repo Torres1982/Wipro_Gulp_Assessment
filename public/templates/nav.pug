@@ -1,0 +1,12 @@
+header
+    #nav-buttons
+        ul.main-nav
+            - var titles = ['Home', 'Users', 'Registration', 'Teams', 'Contacts']
+            each title in titles
+                li
+                    if title == 'Users'
+                        a.nav_users(href='/#') #{title}
+                    else
+                        a(href='/#') #{title}
+        a.mobile-menu-icon
+            img.menu-icon(src='/images/menu_icon.png' alt='Menu Icon' width='45' height='45')

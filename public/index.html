@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 1 - Assessment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/styles.css">
+  </head>
+  <body>
+    <!--h1 Week 1 - Assessment-->
+    <header>
+      <div id="nav-buttons">
+        <ul class="main-nav">
+          <li><a href="/#">Home</a>
+          </li>
+          <li><a class="nav_users" href="/#">Users</a>
+          </li>
+          <li><a href="/#">Registration</a>
+          </li>
+          <li><a href="/#">Teams</a>
+          </li>
+          <li><a href="/#">Contacts</a>
+          </li>
+        </ul><a class="mobile-menu-icon"><img class="menu-icon" src="/images/menu_icon.png" alt="Menu Icon" width="45" height="45"></a>
+      </div>
+    </header>
+    <h3>Please Register:</h3>
+    <div class="pug-message">
+      <p>Be haappy! You are lucky to get a discount of 30% when you register today!</p>
+      <p>Use the promo code to avail of the discount: OFF30TODAY.</p>
+    </div>
+    <div class="section-form">
+      <form id="registration-form" method="POST" action="#">
+        <div class="row">
+          <div class="col span-1-of-7 form-label">
+            <label for="first-name">First Name:</label>
+          </div>
+          <div class="col span-6-of-7">
+            <input class="my-form" id="first-name" type="text" placeholder="First Name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-7 form-label">
+            <label for="surname">Surname:</label>
+          </div>
+          <div class="col span-6-of-7">
+            <input class="my-form" id="surname" type="text" placeholder="Surname" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-7 form-label">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col span-6-of-7">
+            <input class="my-form" id="email" type="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-7 form-label">
+            <label for="date-of-birth">Date:</label>
+          </div>
+          <div class="col span-6-of-7">
+            <input class="my-form" id="date-of-birth" type="date" placeholder="Date" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-7 form-label">Gender:</div>
+          <div class="col span-6-of-7">
+            <label class="form-label form-radio" for="female">FEMALE:
+              <input class="my-form" id="female" type="radio" name="gender" value="female" required>
+            </label>
+            <label class="form-label form-radio" for="male">MALE:
+              <input class="my-form" id="male" type="radio" name="gender" value="male" required>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-7 form-label"></div>
+          <div class="col span-6-of-7 form-label">
+            <button id="submit-button" type="submit" onClick="validateFields()">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="section-features">
+      <div class="section-items">
+        <div class="col span-1-of-3">
+          <h3>My first section</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <div class="section-items">
+        <div class="col span-1-of-3">
+          <h3>My second section</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <div class="section-items">
+        <div class="col span-1-of-3">
+          <h3>My third section</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="footer-copyright">
+          <p>Copyright &copy; by Arturro Torres Sukiennik | Wipro</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="/dist/scripts.js"></script>
+  </body>
+</html>

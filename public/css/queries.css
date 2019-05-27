@@ -1,0 +1,50 @@
+/*******************************************/
+/* 	    Large Screen Size Devices 	       */
+/*******************************************/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*******************************************/
+/* 	    Medium Screen Size Devices 	       */
+/*******************************************/
+@media only screen and (max-width: 1023px) {
+	body {font-size: 17px;}
+	.footer {margin-top: 330px;}
+}
+
+/*******************************************/
+/*  	Small Screen Size Devices 	       */
+/*******************************************/
+@media only screen and (max-width: 767px) {
+	body {font-size: 15px;}
+	h3 {clear: left;}
+	.footer {margin-top: 400px;}
+	.mobile-menu-icon {display: inline-block; margin-top: -15px; float: right; clear: right;}
+	.main-nav {margin-bottom: 20px; display: none; float: left;}
+	.main-nav li {display: block; margin-bottom: 5px; width: 100px;}
+	.main-nav li a {display: block; border: none; padding: 2px;}
+    .footer .footer-social-media {margin-bottom: 15px;}
+    .footer-social-media img {width: 30px; height: 30px;}
+    .footer-navigation {margin-top: 3px;}
+}
+
+/*******************************************/
+/* 	    Small Screen Size Devices 	       */
+/*******************************************/
+@media only screen and (max-width: 480px) {
+	body {font-size: 13px;}
+	.footer {margin-top: 460px;}
+    .footer .footer-navigation, .footer .footer-social-media {margin-bottom: 30px;}
+    #submit-button {margin-left: 70px;}
+}
+
+@media only screen and (max-width: 352px) {
+	body {font-size: 12px;}
+	.footer {margin-top: 480px;}
+}
+
+@media only screen and (max-width: 254px) {
+	body {font-size: 12px;}
+	.footer {margin-top: 500px;}
+}

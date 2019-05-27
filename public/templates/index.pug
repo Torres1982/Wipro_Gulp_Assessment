@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+    include head.pug
+    body
+        //h1 Week 1 - Assessment
+        include nav.pug
+        h3 Please Register:
+        - var is_voucher_valid = true
+        .pug-message
+            if (is_voucher_valid)
+                p Be haappy! You are lucky to get a discount of 30% when you register today!
+                p Use the promo code to avail of the discount: OFF30TODAY.
+            else
+                p No discounts available today!
+        .section-form
+          - var classes_first = ['span-1-of-7', 'form-label']
+          - var classes_two = ['col', 'span-6-of-7']
+          - var types = ['text', 'text', 'email', 'date']
+          - var ids = ['first-name', 'surname', 'email', 'date-of-birth']
+          - var labels = ['First Name', 'Surname', 'Email', 'Date']
+          - var genders = ['female', 'male']
+              form#registration-form(method='POST', action='#')
+                  for label, index in labels
+                      .row
+                          .col(class=classes_first)
+                              label(for=ids[index]) #{labels[index]}:
+                          div(class=classes_two)
+                              input.my-form(id=ids[index] type=types[index] placeholder=labels[index] required)
+                  .row
+                      .col(class=classes_first) Gender:
+                      div(class=classes_two)
+                          for gender, index in genders
+                              label(for=genders[index] class='form-label form-radio') #{(genders[index]).toUpperCase()}:
+                                  input.my-form(id=genders[index] type='radio' name='gender' value=genders[index] required)
+                  .row
+                      .col(class=classes_first)
+                      div(class=classes_two class='form-label')
+                          button#submit-button(type='submit' onClick='validateFields()') Register
+        .section-features
+            -var string_numbers = ['first', 'second', 'third']
+            for number, index in string_numbers
+                .section-items
+                    .col.span-1-of-3
+                        h3 My #{string_numbers[index]} section
+                        p.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        include footer.pug

@@ -1,0 +1,207 @@
+/* ------------------------------------------------ */
+/*		                Main Section			    */
+/* ------------------------------------------------ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace, Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	margin-left: 5px;
+	background-image: url("../images/background.png");
+	background-size: cover;
+}
+
+h1 {
+	color: white;
+	margin-bottom: 20px;
+	font-size: 250%;
+	font-weight: 300;
+}
+
+h3 {
+	color: white;
+	margin: 0 0 20px 12px;
+}
+
+/* ------------------------------------------------ */
+/*		                Sections			        */
+/* ------------------------------------------------ */
+
+.section-items p {
+	color: white;
+	text-align: justify;
+}
+
+.section-features p {
+	padding: 0 15px;
+}
+
+.section-features h3 {
+    margin-left: 14px;
+}
+
+/* ------------------------------------------------ */
+/*		                Form			            */
+/* ------------------------------------------------ */
+
+.form-label {
+	color: white;
+}
+
+.section-form {
+    margin-left: 12px;
+}
+
+.my-form {
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+#first-name, #surname, #email {
+	height: 25px;
+}
+
+#date-of-birth {
+	width: 170px;
+	height: 25px;
+}
+
+#female, #male {
+    margin-left: 5px;
+}
+
+.form-radio:first-child {
+    margin-right: 7px;
+}
+
+*:focus {
+	outline:none;
+}
+
+/* ------------------------------------------------ */
+/*		                Buttons			            */
+/* ------------------------------------------------ */
+#nav-buttons {
+	margin-bottom: 30px;
+    margin-left: 12px;
+}
+
+.main-nav {
+	margin-top: 30px;
+	display: inline-block;
+	list-style:none;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-right: 10px;
+    padding: 0 2px 0 2px;
+}
+
+.main-nav li:last-child {
+	margin-right: 0;
+}
+
+.main-nav li a {
+	padding: 10px 25px 10px 25px;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	background-color: yellow;
+	transition: background-color 0.5s;
+}
+
+#submit-button {
+	background: red;
+	color: white;
+	border-radius: 5px;
+	width: 100px;
+	height: 30px;
+	margin-bottom: 30px;
+}
+
+#submit-button:hover {
+	background-color: yellow;
+	color: black;
+}
+
+/* ------------------------------------------------ */
+/*		            Mobile Navigation		        */
+/* ------------------------------------------------ */
+.mobile-menu-icon {
+	color: white;
+	margin: 0 5px 0 0;
+	cursor: pointer;
+	display: none;
+}
+
+#nav-buttons a {
+	//background-color: white;
+}
+
+/* ------------------------------------------------ */
+/*		            Footer			                */
+/* ------------------------------------------------ */
+.footer {
+	background-color: black;
+	margin-left:-5px;
+	margin-top: 350px;
+	padding: 20px 0 20px 0;
+	width: 100%;
+}
+
+.footer ul li a, .footer-social-media, .footer-copyright {
+	color: white;
+}
+
+.footer-social-media, .footer ul, .footer-copyright {
+	text-align: center;
+}
+
+.footer ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.footer ul li a:hover {
+	color: yellow;
+}
+
+.footer ul li a {
+	text-decoration: none;
+}
+
+.footer-navigation {
+  margin-top: 14px;
+	list-style: none;
+}
+
+.footer-social-media img {
+	margin-bottom: -12px;
+	opacity: 0.7;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-media img:hover {
+	opacity: 1;
+}
+
+/* ------------------------------------------------ */
+/*		From pug templates		    */
+/* ------------------------------------------------ */
+.pug-message {
+	margin-left: 12px;
+	margin-bottom: 15px;
+	font-style: italic;
+	color: yellow;
+}
